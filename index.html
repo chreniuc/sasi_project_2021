@@ -1,0 +1,108 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Playfair and ADFGVX</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Playfair and ADFGVX</a>
+      </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Playfair and ADFGVX</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="playfair_section">
+                <h5 class="mb-0">
+                  <button class="btn btn-secondary" data-toggle="collapse" data-target="#collapse_playfair_section" aria-expanded="true" aria-controls="collapse_playfair_section">
+                  Playfair Section
+                  </button>
+                </h5>
+              </div>
+              <div id="collapse_playfair_section" class="collapse show" aria-labelledby="playfair_section" data-parent="#accordion">
+                <div class="card-body">
+                  <form id="playfair_form" action="#">
+                    <div class="form-group">
+                      <label for="playfair_input_text">Input text</label>
+                      <textarea id="playfair_input_text" type="text" class="form-control overflow-auto small" placeholder="Input string" rows="1" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="playfair_input_key">Input key</label>
+                      <textarea id="playfair_input_key" placeholder="Input key" type="text" class="form-control overflow-auto small" rows="1" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="playfair_output_text">Output text</label>
+                      <textarea readonly="" id="playfair_output_text" placeholder="Input string" type="text" class="form-control overflow-auto small" rows="1" required></textarea>
+                    </div>
+                    <button id="playfair_encrypt" class="btn btn-danger">Encrypt</button>
+                    <button id="playfair_decrypt" class="btn btn-success">Decrypt</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="adfgvx_section">
+                <h5 class="mb-0">
+                  <button class="btn btn-secondary" data-toggle="collapse" data-target="#collapse_adfgvx_section" aria-expanded="false" aria-controls="collapse_adfgvx_section">
+                    ADFGVX Section
+                  </button>
+                </h5>
+              </div>
+              <div id="collapse_adfgvx_section" class="collapse" aria-labelledby="adfgvx_section" data-parent="#accordion">
+                <div class="card-body">
+                  <form id="adfgvx_form" action="#">
+                    <div class="form-group">
+                      <label for="adfgvx_input_text">Input text</label>
+                      <textarea id="adfgvx_input_text" type="text" class="form-control overflow-auto small" placeholder="Input string" rows="1" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="adfgvx_input_key">Input key</label>
+                      <textarea id="adfgvx_input_key" placeholder="Input key" type="text" class="form-control overflow-auto small" rows="1" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="adfgvx_output_text">Output text</label>
+                      <textarea id="adfgvx_output_text" readonly="" placeholder="Input string" type="text" class="form-control overflow-auto small" rows="1" required></textarea>
+                    </div>
+                    <button id="adfgvx_encrypt" class="btn btn-danger">Encrypt</button>
+                    <button id="adfgvx_decrypt" class="btn btn-success">Decrypt</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark text-light mt-3">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020-2021 by Hreniuc Cristian-Alexandru.</div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="js/playfair.js"></script>
+  <script src="js/index.js"></script>
+</html>
+
