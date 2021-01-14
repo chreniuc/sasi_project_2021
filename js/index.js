@@ -21,6 +21,7 @@ $( "#adfgvx_encrypt" ).click(function( event ) {
     event.preventDefault(); // Avoid going to the top page.
     // call playfair encrypt
     console.log("adfgvx_encrypt");
+    encyrpt_adfgvx_button();
 });
 
 // ADFGVX encrypt button
@@ -28,4 +29,5 @@ $( "#adfgvx_decrypt" ).click(function( event ) {
     event.preventDefault(); // Avoid going to the top page.
     // call playfair encrypt
     console.log("adfgvx_decrypt");
+    decrypt_adfgvx_button();
 });
